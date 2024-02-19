@@ -6,4 +6,4 @@ sequelize.authenticate();
 
 console.log("db connection is working");
 
-module.exports = sequalize;
+module.exports = sequelize;
