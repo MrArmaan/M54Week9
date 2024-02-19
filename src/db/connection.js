@@ -1,3 +1,9 @@
-const { Sequelize } = require("sequalize");
+const { Sequelize } = require("sequelize");
 
-const sequalize = new Sequalize(process.env.MYSQL_URI);
+const sequelize = new Sequelize(process.env.MYSQL_URI);
+
+sequelize.authenticate();
+
+console.log("db connection is working");
+
+module.exports = sequalize;
