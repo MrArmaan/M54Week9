@@ -27,5 +27,5 @@ const getAllUsers = async (req, res) => {
 
 module.exports = {
   signupUser: signupUser,
-  getAllUsers,
+  getAllUsers: getAllUsers,
 };
